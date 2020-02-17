@@ -46,7 +46,7 @@ random data. All you need to do is enter in random data and get the result.
 The implementation detail's are hidden 
 
 test_statistics ----> statistics
-class Statistics(Calculator):
+class Statistics(Calculator): s
 
     def mean(self, data):
         self.result = mean(data)
