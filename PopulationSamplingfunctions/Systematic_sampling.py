@@ -21,3 +21,5 @@ class SystemicSample():
             temp += nNum
 
         return sample
+    
+    ##
