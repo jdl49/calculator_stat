@@ -1,10 +1,11 @@
-from Calculator.Addition import addition
+from Calculator.Sum_data import sum
 from Calculator.Division import division
+
+from Statistics.Deci import decimalize
+
+import copy
 
 
 def mean(data):
-    num_values = len(data)
-    total = 0
-    for num in data:
-        total = addition(total, num)
-    return division(num_values, total)
+    data = decimalize(copy.deepcopy(data))  # don't modify the original data
+    return float(division(sum(data), len(data)))
