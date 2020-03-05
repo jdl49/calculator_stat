@@ -67,7 +67,8 @@ class Statistics(Calculator): s
 
 Then back up returning the mean result.
 
-#Polymorphism 
+#Polymorphism
+
 
 Mean many shapes in greek. Its role in coding explains that any class can 
 be inherited by multiple classes of different type but still function independently and with out conflicting

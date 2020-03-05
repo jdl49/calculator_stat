@@ -1,0 +1,1 @@
+# How to Find a Sample Size Given a Confidence Interval and Width (known population standard deviation)
