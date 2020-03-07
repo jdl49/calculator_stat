@@ -10,7 +10,7 @@ class random_float:
         seed(theSeed)
 
         for each in range(length):
-            number = random.uniform(data)
+            number = random.uniform(data, length)
             aList.append(number)
 
         return aList

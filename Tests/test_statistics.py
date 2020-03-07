@@ -8,7 +8,7 @@ import pprint
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         seed(5)
-        self.testData = randint(0, 10, 20)
+        self.testData = [0,0,0,5,5,7,21,5]
         self.statistics = Statistics()
 
     def test_instantiate_calculator(self):
@@ -16,7 +16,15 @@ class MyTestCase(unittest.TestCase):
 
     def test_mean_calculator(self):
         mean = self.statistics.mean(self.testData)
-        self.assertEqual(mean, 4.25)
+        self.assertEqual(mean, 5.375)
+
+    def test_mode_calculator(self):
+        mode = self.statistics.mode(self.testData)
+        self.assertEqual(mode, 0)
+
+    def test_median_calculator(self):
+        median = self.statistics.mode(self.testData)
+        self.assertEqual(median, 5)
 
 
 if __name__ == '__main__':

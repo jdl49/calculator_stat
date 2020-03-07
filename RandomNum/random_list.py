@@ -17,7 +17,22 @@ class RandomList():
         seed(theSeed)
 
         for each in range(length):
-            number = random.randint(data)
+            number = random.randint(data, length)
             aList.append(number)
 
         return aList
+
+
+
+    @staticmethod
+    def list_Of_Floats(data, length, theSeed):
+        aList = []
+        seed(theSeed)
+
+        for each in range(length):
+            number = random.uniform(data, length)
+            aList.append(number)
+
+        return aList
+
+

@@ -1,6 +1,7 @@
 from Calculator.Calculator import Calculator
 from Statistics.Mean import mean
 from Statistics.Mode import mode
+from Statistics.Median import median
 
 
 class Statistics(Calculator):
@@ -12,3 +13,8 @@ class Statistics(Calculator):
     def mode(self, data):
         self.result = mode(data)
         return self.result
+
+    def median(self, data):
+        self.result = median(data)
+        return self.result
+
