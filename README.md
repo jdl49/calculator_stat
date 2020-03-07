@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/kaw393939/calculator.svg?branch=master)](https://travis-ci.com/kaw393939/calculator)
 
-# calculator
+# Stat Calculator
 The calculator class is an example of encapsulation. It encapsulates all the logic of a basic calculator. 
 
     class Calculator:
