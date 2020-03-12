@@ -42,7 +42,7 @@ class Statistics(Calculator):
         self.result = skew(data)
         return self.result
 
-    def correlate(self, data):
+    def correlate(self, data, ydata):
         self.result = correlate(data, ydata)
         return self.result
 
