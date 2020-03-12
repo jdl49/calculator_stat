@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         seed(5)
         self.testData = [0,0,0,5,5,7,21,5]
-        self.testDataY = [4,7,3,2,7,32,12]
+        self.testDataY = [4,7,3,2,7,32,12,10]
         self.statistics = Statistics()
 
     def test_instantiate_calculator(self):
