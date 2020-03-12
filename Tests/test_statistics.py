@@ -44,7 +44,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(skew, 1.554528469606428)
 
     def test_correlate_calculator(self):
-        correlate = self.statistics.correlate(self.testData)
+        correlate = self.statistics.correlate(self.testData, self.testDataY)
         self.assertEqual(correlate, 5)
 
     #def test_z_scores_calculator(self):
