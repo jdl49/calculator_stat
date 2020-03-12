@@ -9,6 +9,7 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         seed(5)
         self.testData = [0,0,0,5,5,7,21,5]
+        self.testDataY = [4,7,3,2,7,32,12]
         self.statistics = Statistics()
 
     def test_instantiate_calculator(self):
@@ -43,7 +44,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(skew, 1.554528469606428)
 
     def test_correlate_calculator(self):
-        correlate = self.statistics.correlate(self.testData)
+        correlate = self.statistics.correlate(self.testData,self.testDataY)
         self.assertEqual(correlate, 5)
 
     #def test_z_scores_calculator(self):
