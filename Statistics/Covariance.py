@@ -20,8 +20,8 @@ def covariance(x, y):
     n = len(x)
 
     for ii in list(range(n)):
-        covsum += (x[ii] - xmean) * (y[ii] - ymean)
-
-    bessels_correction = n - 1
+        float(covsum += (x[ii] - xmean) * (y[ii] - ymean))
+        
+    float(bessels_correction = n - 1)
 
     return covsum / bessels_correction
