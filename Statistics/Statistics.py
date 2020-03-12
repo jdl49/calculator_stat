@@ -43,7 +43,7 @@ class Statistics(Calculator):
         return self.result
 
     def correlate(self, data):
-        self.result = correlate(xdata, ydata)
+        self.result = correlate(data, ydata)
         return self.result
 
     def z_scores(self, data):
